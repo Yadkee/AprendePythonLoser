@@ -1,5 +1,5 @@
 #! python3
-from telegram.ext import Updater, MessageHandler, Filters
+import telegram.ext
 
 TOKEN = "TU_TOKEN"
 
@@ -10,7 +10,9 @@ def echo(bot, update):
     if text == "ping":
         bot.send_message(update.message.chat_id, "pong")
 
-updater = Updater(token=TOKEN)
+updater = telegram.ext.Updater(token=TOKEN)
+handler = telegram.ext.MessageHandler(telegram.ext.Filters.text, echo)
+updater.dispatcher.add_handler(handler)
+
 updater.start_polling()
-updater.dispatcher.add_handler(MessageHandler(Filters.text, echo))
 updater.idle()
