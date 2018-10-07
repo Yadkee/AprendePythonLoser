@@ -10,4 +10,5 @@ web = r.read().decode()  # html en texto plano
 tr = re.findall("<tr>(.*?)</tr>", web, flags=re.DOTALL)[2]
 
 for i in re.findall("<li.*?>(.*?)</li>", tr, flags=re.DOTALL):
-    print(i)  # Cada una de las noticias de ACTUALIDAD
+    # Cada una de las noticias de ACTUALIDAD
+    print(re.sub("<.*?>", "", i, flags=re.DOTALL))  # Quita todas las tags
