@@ -10,4 +10,4 @@ soup = bs4.BeautifulSoup(web, "html.parser")
 tr = soup.findAll("tr")[2]  # Buscamos en la tercera row de la tabla principal
 
 for i in tr.findAll("li"):
-    print(i)  # Cada una de las noticias de ACTUALIDAD
+    print(i.text)  # Cada una de las noticias de ACTUALIDAD en texto plano :D
