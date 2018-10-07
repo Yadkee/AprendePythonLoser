@@ -1,6 +1,8 @@
 # AprendePythonLoser
 Pues que aprendas Python!
 
+Link del Taller en el que se pondrán cosas en tiempo real: https://goo.gl/A29Mhh
+
 ## Instalación
 * Python: [Webpage](https://www.python.org/)
 
