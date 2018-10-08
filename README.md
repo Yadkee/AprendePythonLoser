@@ -3,6 +3,8 @@ Pues que aprendas Python!
 
 Link del Taller en el que se pondrán cosas en tiempo real: https://goo.gl/A29Mhh
 
+Link de la presentación por si alguno no ve: https://goo.gl/sMeCEk
+
 ## Instalación
 * Python: [Webpage](https://www.python.org/)
 
